@@ -15,6 +15,7 @@ phases:
 artifacts:
   files:
     - target/sample-app-1.0.jar
+  discard-paths: yes
 
       
       
