@@ -14,6 +14,8 @@ phases:
       - echo "Building the application"
       - mvn package -DskipTests
       - ls -a
+      - cd target
+      - ls -a
       
       
       
