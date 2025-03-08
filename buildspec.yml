@@ -5,17 +5,17 @@ phases:
       java: corretto17
   pre_build:
     commands:
-      - ls -a
       - echo "Installing dependencies"
       - mvn clean install -DskipTests
   build:
     commands:
-      - ls -a
+
       - echo "Building the application"
       - mvn package -DskipTests
-      - ls -a
-      - cd target
-      - ls -a
+artifacts:
+  files:
+    - target/sample-app-1.0.jar
+
       
       
       
